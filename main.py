@@ -94,14 +94,14 @@ def main():
     # It will be in form of Menu in the above of the GUI
     def convert_text_to_speach(selected_option="Antoni"):
         try:
-            set_api_key("b63a6de26e575e9715335a08e4d3eda5")
+            set_api_key("Your API Key")
             audio = generate(
                 text=textbox.get("0.0", "end-1c"),
                 voice=selected_option,
                 model="eleven_monolingual_v1"
             )
         except:
-            set_api_key("b63a6de26e575e9715335a08e4d3eda5")
+            set_api_key("Your API Key")
             audio = generate(
                 text=textbox.get("0.0", "end-1c"),
                 voice="Adam",
